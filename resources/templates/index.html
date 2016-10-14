@@ -1,0 +1,16 @@
+<html>
+<body>
+{{#temp}}
+    <form action="/person" method="get">
+        <a href="/person?id={{id}}"> <input type="hidden" value="{{id}}" name="number"> {{id}}: {{firstName}} {{lastName}}</a>
+        <button type="submit">Select</button>
+    </form>
+{{/temp}}
+{{#showBack}}
+<a href="/?offset={{back20}}">Previous</a>
+{{/showBack}}
+{{#showNext}}
+<a href="/?offset={{next20}}">Next</a>
+{{/showNext}}
+</body>
+</html>
